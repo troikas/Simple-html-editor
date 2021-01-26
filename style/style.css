@@ -76,10 +76,10 @@ main
     height: 100%;
 }
 
-.edit span
+.edit p
 {
     position: absolute;
-    top: 0;
+    top: -2em;
     left: 0;
 
     margin: .1em;
@@ -87,7 +87,7 @@ main
 
     opacity: .7;
     border-radius: 5px;
-    background: #121110;
+    background: #263238;
 }
 
 textarea
@@ -103,7 +103,8 @@ textarea
 
     color: #e1f2e3;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
     background-color: #263238;
 }
 

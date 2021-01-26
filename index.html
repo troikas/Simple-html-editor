@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Javascript html Editor</title>
         <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="style/tln.css">
     </head>
 
     <body>
@@ -18,15 +19,15 @@
             <div class="editors">
                 <div class="edit" id="editHtml">
                     <textarea name="edht" id="edht" oninput="showPreview()"></textarea>
-                    <span>html</span>
+                    <p>html</p>
                 </div>
                 <div class="edit" id="editCss">
                     <textarea name="edcs" id="edcs" oninput="showPreview()"></textarea>
-                    <span>css</span>
+                    <p>css</>
                 </div>
                 <div class="edit" id="editJs">
                     <textarea name="edjs" id="edjs" oninput="showPreview()"></textarea>
-                    <span>js</span>
+                    <p>js</p>
                 </div>
             </div>
             <div class="view">
@@ -39,6 +40,13 @@
             </a>
         </footer>
         <script src="./js/main.js"></script>
+        <script src="./js/tln.min.js"></script>
+        <script>
+            TLN.appendLineNumbers('edht');
+            TLN.appendLineNumbers('edcs');
+            TLN.appendLineNumbers('edjs');
+
+        </script>
     </body>
 
 </html>
