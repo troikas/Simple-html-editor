@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Javascript html Editor</title>
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/tln.min.css">
+        <scrip src="./js/tln.min.js" defer></scrip>
+    </head>
+
+    <body>
+        <header>
+            <img src="img/logo.svg" alt="Logo Troikas">
+            <h1>Javascript html Editor</h1>
+        </header>
+        <main>
+            <div class="editors">
+                <div class="edit" id="editHtml">
+                    <textarea name="edht" id="edht" oninput="showPreview()"></textarea>
+                    <span>html</span>
+                </div>
+                <div class="edit" id="editCss">
+                    <textarea name="edcs" id="edcs" oninput="showPreview()"></textarea>
+                    <span>css</span>
+                </div>
+                <div class="edit" id="editJs">
+                    <textarea name="edjs" id="edjs" oninput="showPreview()"></textarea>
+                    <span>js</span>
+                </div>
+            </div>
+            <div class="view">
+                <iframe id="preview-window"></iframe>
+            </div>
+        </main>
+        <footer>
+            <a href="mailto:troikas@troikas.eu">
+                <h6>Desing by TROiKAS &copy <span id="copy"></span></h6>
+            </a>
+        </footer>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
