@@ -1,8 +1,8 @@
 function _(e) {
   return document.getElementById(e);
 }
-const myDate = new Date();
-const myYear = myDate.getFullYear();
+
+const myYear = new Date().getFullYear();
 
 _('copy').innerText = (myYear - 2) + ' ' + (myYear + 2);
 
